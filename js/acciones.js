@@ -9,8 +9,7 @@ $('#btnjugar').on('tap',function(){
 $('#btninicio').on('tap',function(){
 	$('#inicio').show()
 $('#1').on('tap', function() {
-	
-	alert ("1");
+	$('#listado').append("<p>1</p>")
 	
 }); 
 });
