@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
   <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
   <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
-        
+  <link rel="stylesheet" href="css/theme.min.css"/>      
         
 
 
@@ -23,69 +23,86 @@
 
  <body>
  
- <!-- Principal -->
- <div data-role="page" id="inicio" >   
+<!-- Principal -->
+<div data-role="page" id="inicio" >   
   <div data-role="header">
     <h1>Inicio</h1>
   </div>
- <bgsound src="naruto.mp3" loop="infinite">
  
- <!--embed id="naruto" name="myMusic" src="naruto.mp3" type="audio/midi"
- autostart="false" Hidden="true" loop="true"></embed>
- 
-  
- <!-- <embed id="naruto" src="naruto.mp3
-  " autostart="true" loop="true"
-width="2" height="0">
-</embed> -->
-
- <div align="center">
-  <div data-role="main" class="ui-content"><a href="#juego" id="btnjugar"><img src="Next1.png" style="width:300px; height:200px"></a>
-  <h1> Jugar </h1>
+ <div data-role="main" class="ui-content" >
+  <div align="center">
+   <div data-role="controlgroup" style="width:50%" data-type="vertical">
+    <a href="#juego" id="btnjugar" class="ui-btn ui-shadow ui-icon-star ">Jugar</a>
+    <a href="#opciones" id="opc" class="ui-btn ui-shadow ui-icon-edit">Opciones</a>
+   </div>
   </div>
  </div>
 
-  <div data-role="footer">
+ <div data-role="footer">  
     <h1>@Jose Roberto Ramirez Perez</h1>
-  </div>
- </div>  
- <!-- Principal -->
- <!-- Segunda -->
- <div data-role="page" id="juego" >   
-  <div data-role="header">
-    <h1>Juego</h1>
-  </div>
+ </div>
+</div>  
+<!-- Principal -->
 
- 
-  
+
+<!-- Segunda -->
+<div data-role="page" id="juego" >   
+ <div data-role="header">
+   <h1>Juego</h1>
+ </div>
 <div data-role="main" class="ui-content">
   <div style="width: 100%; height:50%; overflow: hidden;">
-    
-    <a href="" id="0"><div id="1" style="width: 50%; float: left; background-color:#F00; height:50%"><br></div>
-    </a>
-    
-    <a href="#click" id="2"><div style="margin-left: 620px; background-color:#0FF;"><br> 
-     </div>
-    </a> 
+    <div>
+     
+     <div style="width:50%; height:250px; background-color:#F00; float:left" id="uno"></div>     <div style="width:50%; height:250px; background-color:#00F; float:right" id="dos"></div>    </div>
+   <div>
+    <div style="width:50%; height:250px; background-color:#0F0; float:left"id="cuatro"></div>
+    <div style="width:50%;height:250px;background-color:#0FF;float:right"id="tres"></div>
+   </div>
   </div>
+ </div>
+ 
+ <div align="center">
+  <div id="click" style="color:#FFF">
+   <p style="color:#FFF">Le diste click en el boton:</p>
+   </div>
+  </div>
+<div>
+  <div id="btnhome"> 
+   <img  src="Next2.png" style="width:150px; height:150px">
+  </div>
+  </div>
+ <div data-role="footer" data-position="fixed" align="center">
+  
+   <h1>@Jose Roberto Ramirez Perez</h1>
+  </div>
+</div>  
+<!-- Segunda -->
+ 
+ 
+<!-- Opciones -->
+<div data-role="page" id="opciones" >   
+ <div data-role="header">
+  <h1>Opciones</h1>
+ </div>
 
-<div style="width: 100%; height:50%; overflow: hidden;">
-   <a href="#click" id="4"> <div style="width: 50%; float:left; background-color:#999; height:50%"><br></div></a>
-    <a href="#click" id="3"><div style="margin-left: 620px; background-color:#00C;"><br></div></a>
-</div>
-</div>
+  <audio id="lostmojo" autoplay="autoplay">
+   <source src="naruto.mp3" type="audio/mp3">
+  </audio>
 
   <div align="center">
-  <div id="click">
+   <img src="mute.jpg" style="width:80px; height:80px" onclick="document.getElementById('lostmojo').pause()" />
   </div>
+  
+ <div data-role="footer" data-position="fixed">
+  <div>
+   <a href="#inicio" id="btninicio"><img src="Next.png" style="width:150px; height:150px">
+   </a>
   </div>
-  <div data-role="footer" align="center">
-    <a href="#inicio" id="btninicio"><img src="Next.png" style="width:150px; height:150px">
-    <h1>@Jose Roberto Ramirez Perez</h1>
-    </a>
-  </div>
- </div>  
-  <!-- Segunda -->
+  <h1>@José Roberto Ramírez Pérez</h1>
+ </div>
+</div>  
+<!-- Opciones -->  
 
  </body>
 </html> 
